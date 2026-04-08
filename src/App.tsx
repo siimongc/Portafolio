@@ -16,13 +16,13 @@ function App() {
         {/* Navigation / Header simple */}
         <header className="p-6 flex justify-center md:justify-start">
           <div className="text-solar-accent font-serif font-bold text-xl tracking-widest uppercase">
-            Simón Portfolio
+            Portfolio
           </div>
         </header>
 
         <Hero 
           name="Simón" 
-          summary="Desarrollador orientado al futuro. Creando experiencias web sostenibles, escalables y visualmente impactantes." 
+          summary="Un poco de mis proyectos personales." 
         />
         
         <ProjectsGrid projects={projects} />

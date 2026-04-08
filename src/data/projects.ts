@@ -1,3 +1,5 @@
+import appBudgetImage from '../assets/app-budget-image.png';
+
 export interface Project {
   id: string;
   title: string;
@@ -10,11 +12,11 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Ecosistema Urbano',
-    description: 'Una plataforma para monitorizar la integración de jardines verticales en entornos urbanos y su impacto en la calidad del aire.',
-    imageUrl: 'https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?q=80&w=1000&auto=format&fit=crop', // A nice nature/tech photo
-    link: '#',
-    tags: ['React', 'D3.js', 'IoT']
+    title: 'Personal Budget',
+    description: 'Aplicación para planificar y distribuir ingresos mensuales en categorías configurables.',
+    imageUrl: appBudgetImage,
+    link: 'https://personal-budget-vb69.vercel.app',
+    tags: ['React', 'TypeScript', 'Tailwind']
   },
   {
     id: '2',
