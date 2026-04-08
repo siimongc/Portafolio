@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-solar-dark text-solar-light font-sans antialiased selection:bg-solar-primary selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-solar-surface/60 backdrop-blur-md border border-solar-primary/30 shadow-lg;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 15px theme('colors.solar.leaf' / 40%);
+  }
+}
