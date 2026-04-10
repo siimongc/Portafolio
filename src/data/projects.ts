@@ -1,4 +1,6 @@
 import appBudgetImage from '../assets/app-budget-image.png';
+import imageBrain from '../assets/imagebrain.png';
+import prMaria from '../assets/pr-maria.png';
 
 export interface Project {
   id: string;
@@ -20,18 +22,18 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    title: 'Solar Node',
-    description: 'Dashboard descentralizado para la gestión y distribución inteligente de energía solar en comunidades.',
-    imageUrl: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1000&auto=format&fit=crop', // Solar panels / sun
-    link: '#',
+    title: 'Portafolio',
+    description: '',
+    imageUrl: prMaria,
+    link: 'https://portafolio-mar-ajo.vercel.app/',
     tags: ['Web3', 'TypeScript', 'Tailwind']
   },
   {
     id: '3',
-    title: 'Raíces Digitales',
-    description: 'Aplicación web que conecta conocimientos ancestrales agrícolas con Machine Learning para optimizar cultivos locales.',
-    imageUrl: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1000&auto=format&fit=crop', // Wisdom / agriculture / fields
-    link: '#',
+    title: 'Second Brain',
+    description: 'Mi primer RAG',
+    imageUrl: imageBrain,
+    link: 'https://personal-rag-psi.vercel.app/',
     tags: ['Python', 'React', 'AI']
   }
 ];
