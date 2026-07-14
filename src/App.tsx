@@ -27,11 +27,6 @@ function App() {
         
         <ProjectsGrid projects={projects} />
       </main>
-      
-      {/* Footer */}
-      <footer className="relative z-10 border-t border-solar-primary/20 bg-solar-surface/30 backdrop-blur-sm py-8 text-center text-solar-light/60 text-sm">
-        <p>© {new Date().getFullYear()} Simón. Cultivado con sabiduría y código.</p>
-      </footer>
     </div>
   );
 }

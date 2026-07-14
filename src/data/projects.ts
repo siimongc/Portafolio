@@ -1,6 +1,7 @@
 import appBudgetImage from '../assets/app-budget-image.png';
 import imageBrain from '../assets/imagebrain.png';
 import prMaria from '../assets/pr-maria.png';
+import f1Dashboard from '../assets/f1-dashboard.png';
 
 export interface Project {
   id: string;
@@ -26,7 +27,7 @@ export const projects: Project[] = [
     description: '',
     imageUrl: prMaria,
     link: 'https://portafolio-mar-ajo.vercel.app/',
-    tags: ['Web3', 'TypeScript', 'Tailwind']
+    tags: ['TypeScript', 'Tailwind']
   },
   {
     id: '3',
@@ -35,5 +36,13 @@ export const projects: Project[] = [
     imageUrl: imageBrain,
     link: 'https://personal-rag-psi.vercel.app/',
     tags: ['Python', 'React', 'AI']
+  },
+  {
+    id: '4',
+    title: 'F1 Dashboard',
+    description: 'Panel interactivo con datos y estadísticas de Fórmula 1.',
+    imageUrl: f1Dashboard,
+    link: 'https://f1-dashboard-ten-phi.vercel.app/',
+    tags: ['React', 'TypeScript', 'Tailwind']
   }
 ];

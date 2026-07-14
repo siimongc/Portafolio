@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Project } from '../data/projects';
 import { ProjectCard } from './ProjectCard';
+import { CvButton } from './CvButton';
 
 interface ProjectsGridProps {
   projects: Project[];
@@ -9,11 +10,16 @@ interface ProjectsGridProps {
 export const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects }) => {
   return (
     <section className="py-16 px-6 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-serif font-bold text-solar-light mb-12 text-center flex items-center justify-center gap-4">
-        <span className="w-12 h-px bg-solar-accent/50"></span>
-        Obras Creadas
-        <span className="w-12 h-px bg-solar-accent/50"></span>
-      </h2>
+      <div className="relative flex flex-col md:flex-row items-center justify-center gap-4 mb-12">
+        <div className="md:absolute md:left-0">
+          <CvButton />
+        </div>
+        <h2 className="text-3xl font-serif font-bold text-solar-light text-center flex items-center justify-center gap-4">
+          <span className="w-12 h-px bg-solar-accent/50"></span>
+          Obras Creadas
+          <span className="w-12 h-px bg-solar-accent/50"></span>
+        </h2>
+      </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
